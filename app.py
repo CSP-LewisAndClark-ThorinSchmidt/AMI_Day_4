@@ -1,5 +1,5 @@
 # app.py
-# Thorin Schmidt
+# gabe M / Maddie/ stolen from mr schmidt.
 # 02/01/22
 
 '''
@@ -19,7 +19,7 @@ class Application(tk.Frame):
     """ Initialize the Frame. """
     
     super(Application, self).__init__(master)
-    self.grid()
+    #self.grid() (this breaks things with pack, removed for the time being.)
     self.create_widgets()
 
   def create_widgets(self):
