@@ -1,6 +1,7 @@
+# !/usr/bin/env python3
+# Jeff & Jacob
+# 2/17/2022
 # app.py
-# Thorin Schmidt
-# 02/01/22
 
 '''
 App Class File 
