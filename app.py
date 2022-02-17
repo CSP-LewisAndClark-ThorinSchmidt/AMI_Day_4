@@ -1,12 +1,12 @@
 # app.py
-# Thorin Schmidt
-# 02/01/22
+# Dominic Thomeczek, Justin Clark
+# 2/17/22
 
 '''
-App Class File 
+App Class File
 
 A generic GUI window class to represent an app that
-starts after a successful login. 
+starts after a successful login.
 '''
 
 import tkinter as tk
@@ -17,18 +17,17 @@ class Application(tk.Frame):
 
   def __init__(self, master):
     """ Initialize the Frame. """
-    
+
     super(Application, self).__init__(master)
-    self.grid()
     self.create_widgets()
 
   def create_widgets(self):
     """ Create a label, and a button that exits. """
-    
+
     # create the label
     msg = "Welcome to your app!"
     self.lblOne = tk.Label(self, text = msg)
     self.lblOne.pack()
-    self.btnExit = tk.Button(self, text = "Exit", 
-                             command= sys.exit)
+    self.btnExit = tk.Button(self, text = "Exit",
+        command= sys.exit)
     self.btnExit.pack()
