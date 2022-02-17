@@ -1,5 +1,5 @@
 # main.py
-# Thorin Schmidt
+# gabe M / Maddie
 # 02/01/22
 
 '''
@@ -11,6 +11,7 @@ Simple program to demonstrate how to create a login screen and switch frames in 
 import tkinter as tk
 import sys
 from app import Application
+from login import Login
 #from login import Login
 
 class Root(tk.Tk):
@@ -24,6 +25,9 @@ class Root(tk.Tk):
   def change_to_app(self):
     app_frame.pack(fill = 'both', expand = 1)
     login_frame.forget()
+
+  def login_pack():
+    self.Login.pack()
   
   
   def login_fail(self):
@@ -34,3 +38,9 @@ class Root(tk.Tk):
 # I'm pretty sure you can figure out which is which
 # Check the announcements channel for linksto helpful
 # resources.
+
+#initlizing that root = root class
+root = Root()
+login = Login(root)
+login.pack()
+root.mainloop()
