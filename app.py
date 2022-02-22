@@ -1,6 +1,6 @@
 # app.py
-# Thorin Schmidt
-# 02/01/22
+# Josh Lyell, Andrew Vester
+# 02/17/22
 
 '''
 App Class File 
@@ -19,7 +19,6 @@ class Application(tk.Frame):
     """ Initialize the Frame. """
     
     super(Application, self).__init__(master)
-    self.grid()
     self.create_widgets()
 
   def create_widgets(self):
